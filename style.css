@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 /* Paleta de cores */
 :root {
     --preto: #020202;
     --branco: #FFF4F4;
     --verde: #8DB580;
-    --vermelho: #820933;
+    --laranja: #E89E0C;
     --azul: #79ADDC;
 }
 
@@ -76,32 +77,49 @@ header div#social-media svg {
 }
 
 main {
-    background: url('images/main-background-image.jpg') no-repeat center;
+    background: url('images/test2.jpg') no-repeat center;
     height: 91.9vh;
 }
 
 div#content {
-    font-family: 'Playfair Display';
+    font-family: 'Inter';
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background: #dbdbdb8a;
     margin: auto;
     padding: 15px;
-    border-radius: 7px;
     max-width: 900px;
     height: 70%;
-    box-shadow: 2px 2px 15px 0px #434343bf;
+    color: var(--branco);
+    /*background: rgba(217, 215, 215, 0.644);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(36, 36, 36);*/
 }
 
 p#name-main {
-    color: var(--vermelho);
+    color: var(--azul);
+    font-family: 'Playfair Display';
     font-size: 25px;
+}
+
+mark#prog {
+    font-family: 'Space Mono';
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--azul);
 }
 
 div#content h1 {
     font-size: 75px;
+    text-shadow: -1px 1px 7px black;
+}
+
+div#content h2 a {
+    color: rgba(128, 128, 128, 0.774);
 }
