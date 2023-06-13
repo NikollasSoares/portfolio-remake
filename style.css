@@ -81,10 +81,14 @@ main {
 }
 
 div#content {
+    font-family: 'Playfair Display';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background: #ffffffb0;
+    background: #dbdbdb8a;
     margin: auto;
     padding: 15px;
     border-radius: 7px;
@@ -95,4 +99,9 @@ div#content {
 
 p#name-main {
     color: var(--vermelho);
+    font-size: 25px;
+}
+
+div#content h1 {
+    font-size: 75px;
 }
