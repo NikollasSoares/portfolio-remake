@@ -44,6 +44,10 @@ a:hover:before {
     transform: scaleX(1);
 }
 
+div#phone-header {
+    display: none;
+}
+
 main {
     background: url('../images/test2.jpg') no-repeat center;
     background-color: var(--preto);
@@ -116,15 +120,35 @@ div#content h2 a:hover:before {
     transform: scaleX(1);
 }*/
 
+div#phone-social-media {
+    display: none;
+}
+
 @media (min-width: 700px) and (max-width: 1300px) {
     div#content h1 {
         font-size: 5vw;
     }
 }
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 100px) and (max-width: 700px) {
+    div#phone-header {
+        color: var(--branco);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--preto);
+        height: 10vh;
+    }
+    div#phone-links a {
+        font-family: 'Inter';
+        color: var(--branco);
+        margin: 7px;
+    }
+
     div#content {
         padding: 0;
+        margin: 0;
+        height: 68vh;
     }
     div#content p {
         padding-bottom: 12px;
@@ -133,4 +157,16 @@ div#content h2 a:hover:before {
         text-align: center;
         font-size: 7vw;
     }
+/*
+    footer {
+        height: 10vh;
+    }
+    div#phone-social-media {
+        display: flex;
+        padding: 5px;
+    }
+    div#phone-social-media a {
+        position: static;
+        margin: 5px;
+    }*/
 }
