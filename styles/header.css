@@ -1,0 +1,63 @@
+header {
+    height: 11.9vh;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background-color: black;
+}
+
+header div#name a img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding-right: 12px;
+}
+
+header div#name a {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+header div#name a:hover::before, div#social-media a:hover::before {
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header div, header div a {
+    color: var(--branco);
+}
+
+header div#links a {
+    font-family: 'Inter';
+    position: relative;
+    margin: 10px;
+    text-decoration: none;
+}
+
+header div#links a:before {
+    background-color: var(--branco);
+}
+
+header div#social-media svg {
+    margin: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+    header div#name a img {
+        display: inline;
+    }
+    div#links, #social-media {
+        display: none;
+    }
+}
