@@ -150,23 +150,23 @@ div#phone-social-media {
         margin: 0;
         height: 68vh;
     }
-    div#content p {
+    div#content p#name-main {
         padding-bottom: 12px;
     }
     div#content h1, h2 {
         text-align: center;
         font-size: 7vw;
     }
-/*
+
     footer {
-        height: 10vh;
+        height: 37px;
+        background-color: var(--preto);
     }
     div#phone-social-media {
         display: flex;
-        padding: 5px;
+        justify-content: center;
     }
     div#phone-social-media a {
-        position: static;
         margin: 5px;
-    }*/
+    }
 }
