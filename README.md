@@ -8,3 +8,6 @@
   3. Responsivity text (more text in higher width screens)
   4. Text still in production!
 <img src="images/about-image-0.5.png" alt="about-page">
+
+## Version 0.5.1
+- Bug fixed
